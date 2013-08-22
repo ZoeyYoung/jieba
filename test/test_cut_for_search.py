@@ -1,12 +1,12 @@
-#encoding=utf-8
+# encoding=utf-8
 import sys
 sys.path.append("../")
 import jieba
 
+
 def cuttest(test_sent):
     result = jieba.cut_for_search(test_sent)
     print("/ ".join(result))
-
 
 
 if __name__ == "__main__":

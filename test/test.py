@@ -1,7 +1,8 @@
-#encoding=utf-8
+# encoding=utf-8
 import sys
 sys.path.append("../")
 import jieba
+
 
 def cuttest(test_sent):
     result = jieba.cut(test_sent)

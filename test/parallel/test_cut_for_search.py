@@ -1,8 +1,9 @@
-#encoding=utf-8
+# encoding=utf-8
 import sys
 sys.path.append("../../")
 import jieba
 jieba.enable_parallel(4)
+
 
 def cuttest(test_sent):
     result = jieba.cut_for_search(test_sent)

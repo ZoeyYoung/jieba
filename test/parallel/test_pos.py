@@ -1,14 +1,15 @@
-#encoding=utf-8
+# encoding=utf-8
 import sys
 sys.path.append("../../")
 import jieba
 jieba.enable_parallel(4)
 import jieba.posseg as pseg
 
+
 def cuttest(test_sent):
     result = pseg.cut(test_sent)
     for w in result:
-        sys.stdout.write(w.word+ "/"+ w.flag + ", ") 
+        sys.stdout.write(w.word + "/" + w.flag + ", ")
     print("")
 
 
